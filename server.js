@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.static("/data/files/public/"));
 app.get(/.*/, function(req, res) {
-  res.sendfile("/data/files/public/index.html");
+  res.sendfile("/data/files/public/");
 });
 app.listen(port);
 
